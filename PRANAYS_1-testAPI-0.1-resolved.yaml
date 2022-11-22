@@ -10,7 +10,7 @@ paths:
   /api/AssetStat/FetchtmAssetList:
     post:
      tags:
-        - Parameters
+     - Parameters
       summary: required parameter for API
       description: ''
       operationId: APIParameter
