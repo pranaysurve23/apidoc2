@@ -1,0 +1,41 @@
+---
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: "0.1"
+servers:
+- url: https://api.demo.eastbayartlocker.com
+paths:
+  /api/AssetStat/GettmAssetListAsync:
+    post:
+      description: Auto generated using Swagger Inspector
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssetStat_GettmAssetListAsync_body'
+            examples:
+              "0":
+                value: "{\r\n    \"TObject\": [\r\n        \"7\",\r\n        \"0\",\r\n        null,\r\n        null,\r\n        null,\r\n        null,\r\n        null,\r\n        \"0\",\r\n        \"100\"\r\n    ]\r\n}"
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+      - url: https://api.demo.eastbayartlocker.com
+    servers:
+    - url: https://api.demo.eastbayartlocker.com
+components:
+  schemas:
+    AssetStat_GettmAssetListAsync_body:
+      type: object
+      properties:
+        TObject:
+          type: array
+          items:
+            type: string
