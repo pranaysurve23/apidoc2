@@ -4,6 +4,9 @@ info:
   title: defaultTitle
   description: defaultDescription
   version: "0.1"
+  x-logo:
+    url: 'https://redocly.github.io/redoc/petstore-logo.png'
+    altText: TestAPIPage
 servers:
 - url: http://localhost:52510
 paths:
