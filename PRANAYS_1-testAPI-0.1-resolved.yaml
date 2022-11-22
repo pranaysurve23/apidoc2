@@ -9,19 +9,19 @@ servers:
 paths:
   /api/AssetStat/FetchtmAssetList:
     post:
-     tags:
-     - Parameters
-      summary: required parameter for API
+    tags:
+        - Parameter
+      summary: fetch entry list
       description: ''
       operationId: APIParameter
       parameters:
         - name: WebSiteID 
-          in: path
-          description: ID of Website
-          required: true
-          schema:
-            type: integer
-            format: int64
+            in: path
+            description: ID of Website
+            required: true
+            schema:
+              type: integer
+              format: int64
             
             requestBody:
         content:
