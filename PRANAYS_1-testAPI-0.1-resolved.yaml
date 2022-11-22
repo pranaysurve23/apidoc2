@@ -1,0 +1,36 @@
+---
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: "0.1"
+servers:
+- url: http://localhost:52510
+paths:
+  /api/AssetStat/FetchtmAssetList:
+    post:
+      description: Auto generated using Swagger Inspector
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssetStat_FetchtmAssetList_body'
+            examples:
+              "0":
+                value: "{\r\n    \"TObject\" : [\"7\",\"0\",null,null,null,null,null,\"0\",\"100\"]\r\n}"
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: http://localhost:52510
+    servers:
+    - url: http://localhost:52510
+components:
+  schemas:
+    AssetStat_FetchtmAssetList_body:
+      type: object
+      properties:
+        TObject:
+          type: array
+          items:
+            type: string
